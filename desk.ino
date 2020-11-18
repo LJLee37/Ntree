@@ -1,6 +1,10 @@
 //headers
 
 
+//global variables
+long time_sec = 0;
+long distance = 0;
+
 //function prototypes
 
 
