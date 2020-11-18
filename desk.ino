@@ -1,4 +1,5 @@
 //headers
+#include <Serial.h>
 
 
 //global variables

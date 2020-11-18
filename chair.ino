@@ -1,4 +1,9 @@
 //headers
+#include <Serial.h>
+
+
+//global variables
+long time_sec = 0;
 
 
 //function prototypes
