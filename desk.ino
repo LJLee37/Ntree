@@ -26,7 +26,8 @@ void setup()
 
 void loop()
 {
-    if (Serial.available()){
+    if(analogRead(A0) > 200){
+        if (Serial.available()){
         int angle = Serial.read();
         if(angle>=0 && angle<=180){
             servo1.write(angle);
@@ -34,11 +35,10 @@ void loop()
             servo3.write(angle);
             servo4.write(angle);
         }
-        
-        
-        
+    } else {
+        // 실행 X
     }
-    
+    delay(10);
 
 }
 
