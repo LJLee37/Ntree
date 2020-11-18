@@ -12,12 +12,16 @@ long time_sec = 0;
 //setup, looop
 void setup()
 {
-    //
+    pinMode(13, INPUT);
 }
 
 void loop()
 {
-    //
+    forceSen = digitalRead(13);
+    if (forceSen == HIGH)
+    {
+        time_sec++;
+    }
 }
 
 //function definitions
