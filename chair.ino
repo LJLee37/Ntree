@@ -4,8 +4,7 @@
 
 //global variables
 long time_sec = 0;
-
-forceSen = digitalRead(13);
+int forcesen = 0;
 
 
 //function prototypes
@@ -19,6 +18,8 @@ void setup()
 
 void loop()
 {
+    forceSen = digitalRead(13);
+    
     if (forceSen == HIGH)
     {
         time_sec++;
