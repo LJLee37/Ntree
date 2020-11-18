@@ -21,10 +21,8 @@ void loop()
 {
     if (forceSen == HIGH)
     {
-        while (1)
-        {
-            time_sec++;
-        }
+        time_sec++;
+        delay(1000);
     }
 }
 
