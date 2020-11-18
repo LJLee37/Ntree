@@ -21,12 +21,23 @@ void setup()
     servo3.attach(4);
     servo4.attach(5);
     Serial.begin(9600);
-    
+    Serial.println("Enter an angle.");
 }
 
 void loop()
 {
-    
+    if (Serial.available()){
+        int angle = Serial.read();
+        if(angle>=0 && angle<=180){
+            servo1.write(angle);
+            servo2.write(angle);
+            servo3.write(angle);
+            servo4.write(angle);
+        }
+        
+        
+        
+    }
     
 
 }
