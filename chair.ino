@@ -24,6 +24,10 @@ void loop()
         time_sec++;
         delay(1000);
     }
+    else
+    {
+        
+    }
 }
 
 //function definitions
