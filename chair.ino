@@ -19,7 +19,6 @@ void setup()
 
 void loop()
 {
-    
     if (forceSen == HIGH)
     {
         while (1)
